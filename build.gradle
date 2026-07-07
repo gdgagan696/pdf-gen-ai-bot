@@ -12,15 +12,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-    compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    annotationProcessor 'org.projectlombok:lombok'
-    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
-    testCompileOnly 'org.projectlombok:lombok'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    testAnnotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'dev.langchain4j:langchain4j:1.17.0'
+    implementation 'dev.langchain4j:langchain4j-ollama:1.17.0'
+    implementation 'dev.langchain4j:langchain4j-chroma:1.17.1-beta27'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
